@@ -18,7 +18,7 @@
 
   ### Tools Usage
   ### list_tables_{database_name}
-  - `list_tables_{database_name}("*,time")` を実行し、テーブルのユニークな一覧を取得してください。
+  - `list_tables_{database_name}({"statement": "SELECT table_name FROM information_schema.tables WHERE table_schema = {database_name}"})` を実行し、テーブルのユニークな一覧を取得してください。
     - 引数は固定で、他の引数を使ってはいけません。
 
   ### list_columns_{database_name}
