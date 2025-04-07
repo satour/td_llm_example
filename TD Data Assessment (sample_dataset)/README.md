@@ -27,6 +27,11 @@
 - 各カラムのNULL率を計算
 - 空文字も含めたNULL分析を実施
 
+## 設定手順
+1. 新規 Knowledge Base として `sample_datasets` を作成します。
+2. 新規 Agent として `[Sub] Null Data Retriever` および `[Sub] Null Data Retriever` を作成します。
+3. 最後に、新規 Agent として `[Main] TD Data Assessment` を作成します。
+
 ## 使用方法
 1. エージェントを起動します
 2. 使用するデータベースを指定します
